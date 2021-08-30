@@ -19,7 +19,11 @@ bottoneGenera.addEventListener("click",
         var eta = document.getElementById("eta").value;
 
         // Codice carrozza
-        var numeroCarrozza = Math.floor(Math.random() * 10);
+        var numeroCarrozza = Math.floor(Math.random() * 10) + 1;
+
+        // Codice CP
+        var numeroCP = Math.floor(Math.random() * 9999) + 90000;
+
         // Calcolo prezzo per km
         var prezzo = (km * 0.21);
 
@@ -39,6 +43,7 @@ bottoneGenera.addEventListener("click",
         document.getElementById('nome-utente').innerHTML = nome;
         document.getElementById('costo').innerHTML = prezzo;
         document.getElementById('carrozza').innerHTML = numeroCarrozza;
+        document.getElementById('codice').innerHTML = numeroCP;
 
     }
 );
