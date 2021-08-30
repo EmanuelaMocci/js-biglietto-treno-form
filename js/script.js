@@ -45,7 +45,7 @@ bottoneGenera.addEventListener("click",
 
         // Ottenuto il risultato lo mostro a video.
         document.getElementById('nome-utente').innerHTML = nome;
-        document.getElementById('costo').innerHTML = prezzo;
+        document.getElementById('costo').innerHTML = prezzo + "€";
         document.getElementById('carrozza').innerHTML = numeroCarrozza;
         document.getElementById('codice').innerHTML = numeroCP;
         document.getElementById('offerta').innerHTML = biglietto;

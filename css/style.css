@@ -55,7 +55,7 @@ button:hover{
     border: 1px solid orange;
 }
 table tr th, td{
-    padding: 20px;
+    padding: 25px;
 }
 table tr th:first-child, #nome-utente{
     background-color: gray;
@@ -65,6 +65,9 @@ table{
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     border-collapse: collapse;
+}
+h3{
+    margin-left: 38px;
 }
 .biglietto{
     display: none;
