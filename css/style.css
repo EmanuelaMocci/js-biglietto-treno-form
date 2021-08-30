@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #F81468;
+    background-color: #b91450;
     max-width: 80%;
     margin: auto;
 }
@@ -31,6 +31,6 @@ h2{
 .bottoni{
     margin-top: 30px;
 }
-table tr th{
+table tr th, td{
     padding: 20px;
 }
