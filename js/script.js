@@ -9,6 +9,7 @@
 
 // 2 - devo recuperare i dati immessi dall’utente
 var genera = document.getElementById("bottoneGenera");
+var annulla = document.getElementById("bottoneAnnulla");
 
 
 bottoneGenera.addEventListener("click",
@@ -48,9 +49,19 @@ bottoneGenera.addEventListener("click",
         document.getElementById('carrozza').innerHTML = numeroCarrozza;
         document.getElementById('codice').innerHTML = numeroCP;
         document.getElementById('offerta').innerHTML = biglietto;
+        document.getElementById('biglietto').classList.add('open');
     }
 );
 
+bottoneAnnulla.addEventListener("click",
+    function() {
+        document.getElementById('biglietto').classList.remove('open');
+        
+        var nome = document.getElementById("nome").value = "";
+        var km = parseInt(document.getElementById("km").value = "");
+        var eta = document.getElementById("eta").value = "";
+    }
+);
 
 
 

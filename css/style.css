@@ -34,3 +34,9 @@ h2{
 table tr th, td{
     padding: 20px;
 }
+.biglietto{
+    display: none;
+}
+.open{
+    display: block;
+}
