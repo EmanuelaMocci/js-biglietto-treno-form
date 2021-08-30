@@ -31,12 +31,15 @@ bottoneGenera.addEventListener("click",
         if( eta == "minorenne"){
             var sconto20 = (prezzo / 100) * 20;
             prezzo = (prezzo - sconto20).toFixed(2);
-        
+            var biglietto = 'Biglietto Ridotto';
+
         } else if ( eta == "over"){
             var sconto40 = (prezzo / 100) * 40; 
             prezzo = (prezzo - sconto40).toFixed(2);
+            var biglietto = 'Biglietto Silver';
+
         } else {
-            
+            var biglietto = 'Biglietto Standard';
         }
 
         // Ottenuto il risultato lo mostro a video.
@@ -44,7 +47,7 @@ bottoneGenera.addEventListener("click",
         document.getElementById('costo').innerHTML = prezzo;
         document.getElementById('carrozza').innerHTML = numeroCarrozza;
         document.getElementById('codice').innerHTML = numeroCP;
-
+        document.getElementById('offerta').innerHTML = biglietto;
     }
 );
 
