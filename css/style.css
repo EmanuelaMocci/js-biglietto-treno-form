@@ -31,3 +31,6 @@ h2{
 .bottoni{
     margin-top: 30px;
 }
+table tr th{
+    padding: 10px;
+}

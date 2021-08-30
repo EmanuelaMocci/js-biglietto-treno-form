@@ -14,23 +14,19 @@
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
     <div class="dati-biglietto">
-        <div class="dato1" id="nome">
-            <label for="">Nome e cognome</label> <br>
-            <input type="text" placeholder="Inserisci il tuo nome">
+        <div class="dato1">
+            <label for="nome">Nome e cognome</label> <br>
+            <input type="text" placeholder="Inserisci il tuo nome"  id="nome">
         </div>
     
         <div class="dato2">
-            <div>
-                Km da percorrere
-            </div> 
-            <input type="number" placeholder="Inserisci i km">
+            <label for="km"> Km da percorrere</label> <br>
+            <input type="number" placeholder="Inserisci i km" id="km">
         </div>
             
         <div class="dato3">
-            <div>
-                Fascia di età
-            </div> 
-            <select name="età" id="">
+            <label for="età">Fascia di età</label> <br>
+            <select name="età" id="eta">
                 <option value="Minorenne">Minorenne</option>
                 <option value="Minorenne">Maggiorenne</option>
                 <option value="Minorenne">Over 65</option>
@@ -41,9 +37,27 @@
             <button id="bottoneAccedi">Genera</button>
             <button id="bottoneAnnulla">Annulla</button>
         </div>
-       
     </div>
    
+    <div class="biglietto">
+    
+        <table>
+            <tr>
+              <th>NOME PASSEGGERO</th>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Costo biglietto</th>
+            </tr>
+            <tr>
+              <td id="nome"></td>
+              <td id="offerta"></td>
+              <td id="carrozza"></td>
+              <td id="codice"></td>
+              <td id="costo"></td>
+            </tr>
+          </table>
+    </div>
        
    
 
