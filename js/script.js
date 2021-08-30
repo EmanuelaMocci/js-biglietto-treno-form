@@ -18,24 +18,26 @@ bottoneGenera.addEventListener("click",
         var km = parseInt(document.getElementById("km").value);
         var eta = document.getElementById("eta").value;
 
-        // // Calcolo prezzo per km
-        // var prezzo = (chilometri * 0.21);
+        // Calcolo prezzo per km
+        var prezzo = (km * 0.21);
 
-        // // Applicazione sconto del 20% under 18
-        // var sconto20 = (prezzo / 100) * 20;
-        // var prezzoFinaleMinorenne = (prezzo - sconto20).toFixed(2);
+        // Applicazione sconto del 20% under 18
+        var sconto20 = (prezzo / 100) * 20;
+        var prezzoFinaleMinorenne = (prezzo - sconto20).toFixed(2);
+      
+        // Applicazione sconto del 40% se over 65
+        var sconto40 = (prezzo / 100) * 40; 
+        var prezzoFinale = (prezzo - sconto40).toFixed(2);
 
-        // // Applicazione sconto del 40% se over 65
-        // var sconto40 = (prezzo / 100) * 40; 
-        // var prezzoFinale = (prezzo - sconto40).toFixed(2);
-
-        // if( eta == minorenne){
-        //     document.getElementById('biglietto').innerHTML += prezzoFinaleMinorenne;
-        // } else if ( eta == over){
-        //     document.getElementById('biglietto').innerHTML += prezzoFinale;
-        // } else {
-        //     document.getElementById('biglietto').innerHTML += prezzo;
-        // }
+        if( eta == "minorenne"){
+            document.getElementById('costo').innerHTML = prezzoFinaleMinorenne;
+            console.log(prezzoFinaleMinorenne);
+        } else if ( eta == "over"){
+            document.getElementById('costo').innerHTML = prezzoFinale;
+            console.log(prezzoFinale);
+        } else {
+            document.getElementById('costo').innerHTML = prezzo;
+        }
 
         // Ottenuto il risultato lo mostro a video.
         document.getElementById('nome-utente').innerHTML = nome;
