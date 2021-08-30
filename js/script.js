@@ -56,7 +56,6 @@ bottoneGenera.addEventListener("click",
 bottoneAnnulla.addEventListener("click",
     function() {
         document.getElementById('biglietto').classList.remove('open');
-        
         var nome = document.getElementById("nome").value = "";
         var km = parseInt(document.getElementById("km").value = "");
         var eta = document.getElementById("eta").value = "";
